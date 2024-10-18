@@ -23,6 +23,10 @@ class App:
     def start(self):
         # Register commands here
         self.load_plugins()
+        print("Type 'add' to add")
+        print("Type 'subtract' to subtract")
+        print("Type 'multiply' to multiply")
+        print("Type 'divide' to divide")
         print("Type 'exit' to exit.")
         while True:  #REPL Read, Evaluate, Print, Loop
             self.command_handler.execute_command(input(">>> ").strip())
